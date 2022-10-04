@@ -10,9 +10,9 @@ class TweetsController < ApplicationController
   def create
     @tweet = Tweet.new(message: params[:tweet][:message],tdate: Time.current)
     if @tweet.save
-      redirect_to "/"
+      redirect_to root_path
     else
-      render "new"
+      render new_path
     end
   end
   
@@ -35,7 +35,7 @@ class TweetsController < ApplicationController
     if @tweet.update(message: params[:tweet][:message])
       redirect_to "/"
     else
-      render "edit"
+      render edit_tweet_path
     end
   end
 end
