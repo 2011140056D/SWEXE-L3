@@ -11,18 +11,9 @@
 
   <body>
     <div id="container">
-      <div id="header">
-        <%= render "header" %>
-      </div>
-      <div id="sidebar">
-        <%= render "sidebar" %>
-      </div>
       <div id="content">
         <!--#ここ共通テンプレ 各内容が yield に入ってる　-->
         <%= yield %>
-      </div>
-      <div id="footer">
-        <%= render "footer" %>
       </div>
     </div>
   </body>

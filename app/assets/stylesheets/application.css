@@ -13,19 +13,38 @@
  *= require_tree .
  *= require_self
  */
-<body>
-<div id="container">
-<div id="header">
-<%= render "header" %>
-</div>
-<div id="sidebar">
-<%= render "sidebar" %>
-</div>
-<div id="content">
-<%= yield %>
-</div>
-<div id="footer">
-<%= render "footer" %>
-</div>
-</div>
-</body>
+
+#pageBody{
+    width:100px;
+    float: left;
+}
+
+#pageSub{
+    width: 1750px;
+    float: right;
+}
+
+.twitter__container {
+  padding: 0;
+  background: #ffffff;
+  overflow: hidden;
+ 
+  margin: 20px auto;
+  font-size: 80%;
+  border: solid 1px #eeeeee;
+}
+
+.box{
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    color: #5d627b;
+    background: white;
+    border-top: solid 5px #5d627b;
+    border: 10px 10px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+}
+
+.box p {
+    margin: 0; 
+    padding: 0;
+}
